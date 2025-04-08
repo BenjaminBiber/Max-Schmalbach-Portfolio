@@ -57,6 +57,7 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  height: 75%;
 }
 
 .hamburger{
@@ -97,10 +98,6 @@
 }
 
 @media (max-width: 480px) {
-  .Desktop_Socials{
-    display: none;
-  }
-
   .Links{
     display: none;
   }
@@ -116,6 +113,29 @@
 }
 
 @media (max-width: 990px) {
+
+  .First_Social {
+    margin: 0;
+  }
+
+  .Social_Media_mobile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32vw;
+    gap: 10%;
+  }
+  
+  .Logo{
+    position: unset !important;
+    height: 75%;
+    transform: none;
+    margin-left: 2.5%;
+  }
+
+  .Social_Media {
+    display: none;
+  }
 
   .Links{
     display: none;
@@ -217,7 +237,7 @@
   outline-offset: 5px;
 }
 
-@media (max-width: 1120px)
+@media (max-width: 1300px)
 {
   .Link_Element {
     width: 3em;
@@ -225,5 +245,21 @@
 
   .Link_Text {
     margin: 0.15em;
+  }
+}
+
+@media (max-width: 1140px)
+{
+  .Link_Element {
+    width: 2.5em;
+  }
+
+  .contact_button {
+    width: 8em !important;
+    font-size: 1em !important;
+  }
+
+  .Link_Text {
+    margin: 0em;
   }
 }
