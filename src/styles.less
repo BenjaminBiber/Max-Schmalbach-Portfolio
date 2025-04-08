@@ -1,1 +1,107 @@
-/* You can add global styles to this file, and also import other style files */
+@import "src/Styles/vars.less";
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  .Primary_Txt{
+    color: @primary-Text;
+    font-family: "Karantina", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 0.15em;
+  }
+  
+  .ATag{
+    text-decoration: none;
+  }
+  
+  .hover_Normal {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .hover_Normal:hover{
+    transform: scale(1.1);
+  }
+  
+  
+  .UnderlineHover {
+      position: relative;
+  
+      &::before {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 4px;
+          border-radius: 4px;
+      background: linear-gradient(to right, #f4f4f4, #ebebf3, #dee4f3, #ceddf2, #bbd7f0, #aad0ed, #98c9ea, #84c3e7, #70b9e4, #5bafe2, #43a5df, #229bdd);
+          bottom: -5%;
+          left: 0;
+          transform-origin: right;
+          transform: scaleX(0);
+          transition: transform .3s ease-in-out;
+      }
+  
+      &:hover::before {
+          transform-origin: left;
+          transform: scaleX(1);
+      }
+  
+  }
+  
+  .test{
+    background-color: red;
+  }
+  
+  .button{
+    background-color: @color2;
+    color: @primary-Text;
+    aspect-ratio: 3.28 / 1;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  
+    p {
+      margin: 0;
+      padding: 0;
+    }
+
+  }
+  
+  .button_OutLnd{
+    background: linear-gradient(var(--primary-Background), var(--primary-Background)) padding-box,
+                var(--button-Outline-Gradient) border-box;
+    border: 3px solid transparent;
+    color: var(--primary-Text);
+    aspect-ratio: 3.28 / 1;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .Button_Text{
+    font-size: 2em;
+    margin: 0;
+  }
+  
+  .aos{
+    animation: aos_appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+  }
+  @keyframes aos_appear{
+    from{
+      opacity: 0;
+      scale: 0.5;
+    }
+    to{
+      opacity: 1;
+      scale: 1;
+    }
+  }
+  
