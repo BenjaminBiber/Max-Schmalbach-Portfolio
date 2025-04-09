@@ -2,6 +2,7 @@
 
   html {
     scroll-behavior: smooth;
+    background: @color1;
   }
   
   body{
@@ -23,11 +24,13 @@
   }
   
   .hover_Normal {
-    transition: transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
   
   .hover_Normal:hover{
     transform: scale(1.1);
+    color: @color2;
+    @hamburger-color: @color2;
   }
   
   
@@ -66,19 +69,20 @@
     border: none;
     border-radius: 10px;
     cursor: pointer;
-  
     p {
       margin: 0;
       padding: 0;
     }
-
   }
   
+  .button:hover {
+    background-color: darken(@color2, 10%);
+  }
+
   .button_OutLnd{
-    background: linear-gradient(var(--primary-Background), var(--primary-Background)) padding-box,
-                var(--button-Outline-Gradient) border-box;
-    border: 3px solid transparent;
-    color: var(--primary-Text);
+    background: transparent;
+    border: 3px solid @color2;
+    color: @primary-Text;
     aspect-ratio: 3.28 / 1;
     border-radius: 10px;
     cursor: pointer;

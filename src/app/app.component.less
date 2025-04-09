@@ -16,4 +16,64 @@
   height: calc(100% - 5em);
   position: absolute;
   background: @bkg-mask;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-right-section {
+  width: 50%;
+}
+
+.home-left-section {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  text-align: center;
+  div {
+    display: flex;
+  }
+  h3 {
+    font-size: 3em;
+    font-weight: 500;
+    width: 70%;
+  }
+  .home-desc {
+    font-size: 1.5em;
+    width: 70%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 991px)
+{
+ 
+  .home-left-section{
+    h3 {
+      font-size: 2em;
+    }
+    .home-desc {
+      font-size: 1em;
+    }
+    button {
+      width: 8em !important;
+    }
+    .Button_Text {
+      font-size: 1.5em;
+    }
+  }
+}
+
+@media (max-width: 768px)
+{
+  .background_mask {
+    flex-direction: column;
+  }
+
+  .home-left-section, .home-right-section {
+    width: 90%;
+  }
 }
