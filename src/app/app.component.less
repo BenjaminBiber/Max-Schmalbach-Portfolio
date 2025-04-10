@@ -44,9 +44,153 @@
   .home-desc {
     font-size: 1.5em;
     width: 70%;
+    letter-spacing: 2.5%;
     margin: 0;
   }
 }
+
+.home-picture-stack {
+  height: 35em;
+  position: relative;
+  padding-right: 5em;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* Hintergrund & Layout */
+.Background {
+  height: 100dvh;
+  z-index: -1;
+  padding-top: 2.7em;
+  flex-shrink: 0;
+}
+
+.Background_Arts {
+  background: linear-gradient(180deg, rgba(53,58,65,1) 0%, rgba(49,53,60,1) 25%, rgba(53, 58, 65, 1) 76%, rgba(53, 58, 65, 1) 100%);
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+
+.Arts_Main {
+  position: relative;
+  width: 100vw;
+}
+
+.Arts_Main:before,
+.Arts_Main:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.Arts_Main:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), @color1);
+}
+
+.Arts_Main:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), @color1);
+}
+
+/* Logos & Slides */
+.logos {
+  overflow: hidden;
+  background: transparent;
+  white-space: nowrap;
+  padding: 1em;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  max-width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), var(--primary-Background));
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), var(--primary-Background));
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 70s slide infinite linear;
+}
+
+.logos-slide-reverse {
+  display: inline-block;
+  animation: 70s work-slide_R infinite linear;
+}
+
+.Heading {
+  width: 100%;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 0 !important;
+}
+
+/* Bilder */
+.work-slide-img {
+  height: 17.5em;
+  width: auto;
+  white-space: nowrap;
+  margin: 0 1em;
+  border-radius: 20px;
+  transition: transform 0.3s ease-out;
+}
+
+.work-slide-img:hover {
+  transform: scale(1.05);
+}
+
+/* Animationen */
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes work-slide_R {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Responsive: kleinere Geräte */
+@media (max-width: 480px) {
+  .work-slide-img {
+    height: 15em !important;
+  }
+
+  .Arts_Main:before,
+  .Arts_Main:after {
+    width: 100px !important;
+  }
+}
+
 
 @media (max-width: 991px)
 {
