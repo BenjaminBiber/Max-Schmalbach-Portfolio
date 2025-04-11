@@ -23,6 +23,12 @@
 
 .home-right-section {
   width: 50%;
+  padding: 5em;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 }
 
 .home-left-section {
@@ -214,10 +220,28 @@
 @media (max-width: 768px)
 {
   .background_mask {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
-  .home-left-section, .home-right-section {
+  .home-left-section, .home-right-section{
     width: 90%;
+    padding-top: 0;
+  }
+
+  .home-right-section {
+    padding-top: 1em;
+    height: 50%;
+    padding-bottom: 0;
+  }
+
+  .Arts_Main {
+    padding-bottom: 2.5em;
+  }
+}
+
+@media (max-width: 480px)
+{
+  .home-right-section {
+    padding-top: 1.5em;
   }
 }
