@@ -1,0 +1,63 @@
+<section id="Home">
+ <div class="background">
+  <div class="background_mask">
+    <div class="home-left-section">
+      <h3 class="Primary_Txt">Hi, ich bin Max, aus Burgheim (LK&nbsp;Neuburg-Schrobenhausen) und erstelle Content rund um und für die Landwirtschaft.</h3>
+      <p class="Primary_Txt home-desc">Du willst auch deine Feldmomente in bester Qualität eingefangt haben? Dann kontaktiere mich noch heute!</p>
+      <div>
+        <a href="mailto:info@ms-agrarpicture.de">
+          <button style="width: 12em; margin: 1em;" class="button_OutLnd contact_button hover_Normal">
+            <p class="Primary_Txt Button_Text">Projekte</p>
+          </button>
+        </a>
+        <a href="mailto:info@ms-agrarpicture.de">
+          <button style="width: 12em; margin: 1em;" class="button contact_button hover_Normal">
+            <p class="Primary_Txt Button_Text">Kontakt</p>
+          </button>
+        </a>
+      </div>
+    </div>
+    <div class="home-right-section">
+      <img src="Bild1.png"/>
+    </div>
+    <a href="#BestOf">
+      <div id="arrow_to_bottom">
+        <img src="/arrow_dwn.svg"/>
+      </div>
+    </a>
+    
+  </div>
+  <img class="background_img" src="/bkg.jpeg"/>
+ </div>
+</section>
+
+<section id="BestOf">
+    <div class="Arts_Main">
+      <h4 class="Heading Primary_Txt aos" style="margin-top: 1em;">die Besten Momente</h4>
+      <div class="logos">
+        <div class="logos-slide">
+          <img *ngFor="let item of Works.slice(0,(Works.length / 2))" src="{{item.img}}" class="work-slide-img" alt="{{item.alt}}" />
+        </div>
+
+        <div class="logos-slide">
+          <img *ngFor="let item of Works.slice(0,(Works.length / 2))" src="{{item.img}}" class="work-slide-img" alt="{{item.alt}}" />
+        </div>
+      </div>
+      <div class="logos">
+        <div class="logos-slide-reverse">
+          <img *ngFor="let item of Works.slice((Works.length / 2),(Works.length))" src="{{item.img}}" class="work-slide-img" alt="{{item.alt}}" />
+        </div>
+
+        <div class="logos-slide-reverse">
+          <img *ngFor="let item of Works.slice((Works.length / 2),(Works.length))" src="{{item.img}}" class="work-slide-img" alt="{{item.alt}}" />
+        </div>
+      </div>
+    </div>
+    <div class="Info">
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="128" height="128" viewBox="0 0 128 128">
+        <path d="M 64 6 C 32 6 6 32 6 64 C 6 96 32 122 64 122 C 96 122 122 96 122 64 C 122 32 96 6 64 6 z M 64 12 C 92.7 12 116 35.3 116 64 C 116 92.7 92.7 116 64 116 C 35.3 116 12 92.7 12 64 C 12 35.3 35.3 12 64 12 z M 64 30 A 9 9 0 0 0 64 48 A 9 9 0 0 0 64 30 z M 64 59 C 59 59 55 63 55 68 L 55 92 C 55 97 59 101 64 101 C 69 101 73 97 73 92 L 73 68 C 73 63 69 59 64 59 z"></path>
+        </svg>
+      <p class="Primary_Txt">Alle Bilder sind mit dem Verständis der Landwirte aufgenommen worden</p>
+    </div>
+</section>
+
