@@ -1,37 +1,72 @@
+@import "src/Styles/vars.less";
+
 .Header_Desktop{
-  width: 100vw;
+  width: 100%;
+  position: relative;
   height: 5em;
-  background-color: transparent;
-  bottom: 0;
-  left: 0;
+  background-color: @color4;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 5.5em;
   z-index: 999;
 }
 
 .Social_Media{
   display: flex;
   align-items: center;
-  margin-right: 7em;
   justify-content: flex-start;
+  width: 32vw;
   gap: 5%;
-  z-index: 88;
+}
+
+.First_Social{
+  margin-left: 1em;
 }
 
 .Links{
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  z-index: 88;
-  margin-left: 7em;
-  margin-right: 1.5em;
+  gap: 1em;
+  padding-right: 1em;
 }
 
 .Mobile_Links{
   text-align: center;
+  flex-grow: unset !important;
 }
+
+
+.Link_Element:hover, .social_Icons:hover {
+  color: @color2;
+
+  path {
+    fill: @color2;
+  }
+}
+
+
+#arrow_to_bottom {
+  width: 24px;
+  transform: rotate(180deg);
+  height: 24px;
+  background-color: white;
+  border-radius: 50%;
+  bottom: 7em;
+  left: calc(50% - (36px)/2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  img {
+    width: 2.5em;
+    height: 2.5em;
+  }
+  &:hover {
+    transform: scale(1.1) translateY(-0.25em) rotate(180deg);
+  }
+}
+
 
 .Link_Text{
   font-size: 1.65em;
@@ -42,20 +77,37 @@
 .social_Icons{
   width: 2em;
   height: 2em;
-  margin-left: 1.5em;
-  margin-right: 1.5em;
+
+  path {
+    width: 2em;
+    height: 2em;
+  }
 }
 
-.props{
+
+.Logo{
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2%;
-}
-
-.Logo{
-  font-size: 2em;
-  margin: 0;
+  flex-direction: column;
+  img {
+    width: 100%;
+    height: 60%;
+  }
+  &:hover {
+    img {
+      opacity: 0.8;
+    }
+  }
+  p {
+    margin: 0;
+    font-size: 1.25rem;
+  }
 }
 
 .Name::selection{
@@ -92,8 +144,9 @@
     justify-content: space-evenly;
   }
 
-  .Social_Media{
-    margin-right: 0;
+  .Logo {
+    position: unset;
+    transform: unset;
   }
 }
 

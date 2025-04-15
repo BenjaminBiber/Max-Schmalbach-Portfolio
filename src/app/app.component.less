@@ -2,7 +2,7 @@
 
 .background {
     width: 100vw;
-    height: calc(100dvh - 5em);
+    height: calc(100vh - 5em);
 }
 
 .background_img {
@@ -91,7 +91,7 @@
 
 /* Hintergrund & Layout */
 .Background {
-  height: 100dvh;
+  height: 100vh;
   z-index: -1;
   padding-top: 2.7em;
   flex-shrink: 0;
@@ -103,10 +103,36 @@
   white-space: nowrap;
 }
 
+.Info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: fit-content;
+  background-color: lighten(@color4, 10%);
+  border-radius: 1em;
+  gap: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+  padding: 0.5em 1em;
+  p {
+    font-size: 2rem;
+    margin: 0;
+    opacity: 1;
+  }
+  svg {
+    width: 2em;
+    height: 2em;
+    path {
+      fill: white;
+    }
+  }
+}
+
 .Arts_Main {
   position: relative;
   width: 100vw;
-  padding-bottom: 5em;
+  padding-bottom: 1.5em;
 }
 
 .Arts_Main:before,
@@ -177,7 +203,7 @@
 
 /* Bilder */
 .work-slide-img {
-  height: 17.5em;
+  height: 15em;
   width: auto;
   white-space: nowrap;
   margin: 0 1em;
@@ -288,6 +314,20 @@
     padding-top: 1em;
     height: 40%;
   }
+
+.Info {
+  border-radius: 0.75em;
+  margin-bottom: 1em;
+  padding: 0.5em 1em;
+  p {
+    font-size: 1rem;
+  }
+  svg {
+    width: 1.5em;
+    height: 1.5em;
+  }
+}
+
 }
 
 @media (max-width: 480px)
@@ -316,6 +356,16 @@
     }
     &:hover {
       transform: scale(1.1) translateY(-0.2em);
+    }
+  }
+
+  .Info {
+    p {
+      font-size: 0.75rem;
+    }
+    svg {
+      width: 1em;
+      height: 1em;
     }
   }
 }

@@ -6,7 +6,7 @@ import { FormsModule } from '@angular/forms';
   standalone: true,
   imports: [FormsModule],
   templateUrl: './footer-component.component.html',
-  styleUrl: './footer-component.component.css'
+  styleUrl: './footer-component.component.less'
 })
 export class FooterComponentComponent {
 
