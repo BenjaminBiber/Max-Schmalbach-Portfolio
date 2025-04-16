@@ -1,5 +1,8 @@
 <div class="gallery-wrapper">
-    <h1 class="Primary_Txt">Galerie</h1>
+    <a *ngIf="!isGallery" href="/Galerie" class="back-to-gallery hover_Normal">
+        <p class="Primary_Txt">zurück zur Galerie</p>
+    </a>
+    <h1 class="Primary_Txt">{{pageHeader}}</h1>
     <div class="polaroid-wrapper">
         <app-polaroid class="polaroid-comp" *ngFor="let item of images" [picturePath]="item.pictures[0].url" [pictureTitle]="item.name"></app-polaroid>
     </div>

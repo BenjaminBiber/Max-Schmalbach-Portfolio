@@ -13,17 +13,27 @@ import { PolaroidComponent } from "../polaroid/polaroid.component";
 export class GalleryComponent implements OnInit {
 
   constructor(private route: ActivatedRoute, private imageService: ImageService) {}
+  
   name:string|null = "";
-
   images: AlbumItem[] = []
   loading = true
   error = false
+  isGallery = false
+  pageHeader = "Galerie"
 
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
       this.name = params.get('name');
       console.log('Route-Param Name:', this.name);
     });
+
+    if(this.name == null)
+    {
+      this.isGallery = true;
+    }else{
+      this.pageHeader = this.name
+    }
+
     this.loadImages();
   }
 
