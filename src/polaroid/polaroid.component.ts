@@ -1,24 +1,14 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ImageService, AlbumItem, ImageItem } from '../jsonservice/pictures.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-polaroid',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './polaroid.component.html',
   styleUrl: './polaroid.component.less'
 })
-export class PolaroidComponent implements OnInit {
-
-  link:string = "/Galerie/"
-
-  ngOnInit(): void {
-    if(this.isAlbum)
-    {
-      this.link = this.link + this.pictureTitle
-    }else {
-      this.link = ""
-    }
-  }
+export class PolaroidComponent {
 
   constructor() {}
 
@@ -28,4 +18,15 @@ export class PolaroidComponent implements OnInit {
   pictureTitle: string = "";
   @Input()
   isAlbum: boolean = true;
+
+  dialogPath:string = "";
+  showDialog:boolean = false;
+
+  OpenDialog():void {
+    this.showDialog = true;
+  }
+
+  CloseDialog():void {
+    this.showDialog = false;
+  }
 }

@@ -1,9 +1,12 @@
 <div class="gallery-wrapper">
     <a *ngIf="!isGallery" href="/Galerie" class="back-to-gallery hover_Normal">
         <p class="Primary_Txt">zurück zur Galerie</p>
+        <div id="arrow_to_bottom">
+            <img src="/arrow_dwn.svg"/>
+        </div>
     </a>
     <h1 class="Primary_Txt">{{pageHeader}}</h1>
     <div class="polaroid-wrapper">
-        <app-polaroid class="polaroid-comp" *ngFor="let item of images" [picturePath]="item.pictures[0].url" [pictureTitle]="item.name"></app-polaroid>
+        <app-polaroid class="polaroid-comp" [isAlbum]="isGallery" *ngFor="let item of images" [picturePath]="item.pictures[0].url" [pictureTitle]="item.name"></app-polaroid>
     </div>
 </div>
