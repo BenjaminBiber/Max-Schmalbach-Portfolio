@@ -1,0 +1,49 @@
+@import "src/Styles/vars.less";
+
+.polaroid-link {
+    text-decoration: none;
+    .polaroid {
+        background: white;
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 1em;
+        align-items: center;
+        flex-direction: column;
+        aspect-ratio: 3.5/4.2;
+        position: relative;
+        border-radius: 0.25em;
+        .polaroid-img {
+            width: 85%;
+            aspect-ratio: 1;
+            object-fit: cover;
+        }
+        .polaroid-txt {
+            color: @color1;
+            font-size: 1.5rem;
+            text-align: center;
+            margin: 0;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        &::after, &::before{
+            content: "";
+            position: absolute;
+            background: lighten(@color4, 5%);
+            width: 4.5rem;
+            aspect-ratio: 1;
+            rotate: 45deg;
+            box-shadow: 
+            1.25rem 0rem 1rem -1.25rem rgb(0 0 0 / 1);
+        }
+        &::after{
+            bottom: -3.25rem;
+            right: -3.25rem;
+            rotate: 225deg;
+        }
+        &::before{
+            left: -3.25rem;
+            top: -3.25rem;
+        }
+    }
+}

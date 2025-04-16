@@ -2,10 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { ImageService, AlbumItem, ImageItem } from '../jsonservice/pictures.service';
+import { PolaroidComponent } from "../polaroid/polaroid.component";
 
 @Component({
   selector: 'app-gallery',
-  imports: [CommonModule],
+  imports: [CommonModule, PolaroidComponent],
   templateUrl: './gallery.component.html',
   styleUrl: './gallery.component.less'
 })
