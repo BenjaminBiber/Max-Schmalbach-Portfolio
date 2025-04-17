@@ -6,7 +6,10 @@
         </div>
     </a>
     <h1 class="Primary_Txt">{{pageHeader}}</h1>
-    <div class="polaroid-wrapper">
+    <div *ngIf="isGallery" class="polaroid-wrapper">
         <app-polaroid class="polaroid-comp" [isAlbum]="isGallery" *ngFor="let item of images" [picturePath]="item.pictures[0].url" [pictureTitle]="item.name"></app-polaroid>
+    </div>
+    <div *ngIf="!isGallery" class="polaroid-wrapper">
+        <app-polaroid class="polaroid-comp" [isAlbum]="isGallery" *ngFor="let item of album?.pictures" [picturePath]="item.url" [pictureTitle]="item.title"></app-polaroid>
     </div>
 </div>

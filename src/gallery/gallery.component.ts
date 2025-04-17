@@ -16,6 +16,7 @@ export class GalleryComponent implements OnInit {
   
   name:string|null = "";
   images: AlbumItem[] = []
+  album: AlbumItem|undefined = undefined;
   loading = true
   error = false
   isGallery = false
@@ -41,6 +42,7 @@ export class GalleryComponent implements OnInit {
     this.imageService.getImages().subscribe({
       next: (data) => {
         this.images = data
+        this.album = this.images.find(p => p.name === this.pageHeader);
         this.loading = false
       },
       error: (err) => {
