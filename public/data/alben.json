@@ -1,0 +1,38 @@
+[
+    {
+      "name": "Sommerurlaub 2024",
+      "pictures": [
+        {
+          "url": "images/test.jpg",
+          "title": "Am Strand"
+        },
+        {
+          "url": "images/test1.jpg",
+          "title": "Sonnenuntergang"
+        }
+      ]
+    },
+    {
+      "name": "Winterreise",
+      "pictures": [
+        {
+          "url": "images/test3.jpg",
+          "title": "Im Schnee"
+        }
+      ]
+    },
+    {
+      "name": "Sommerurlaub 2024",
+      "pictures": [
+        {
+          "url": "images/test.jpg",
+          "title": "Am Strand"
+        },
+        {
+          "url": "images/test1.jpg",
+          "title": "Sonnenuntergang"
+        }
+      ]
+    }
+  ]
+  

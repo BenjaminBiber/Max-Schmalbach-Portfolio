@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { TextService } from '../Services/textservice/text.service';
 
 @Component({
   selector: 'app-footer-component',
@@ -9,5 +10,5 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './footer-component.component.less'
 })
 export class FooterComponentComponent {
-
+  constructor(public TextService: TextService){}
 }

@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ImageService, AlbumItem, ImageItem } from '../jsonservice/pictures.service';
+import { AlbumService, AlbumItem, ImageItem } from '../Services/jsonservice/album.service';
 import { CommonModule } from '@angular/common';
 
 @Component({

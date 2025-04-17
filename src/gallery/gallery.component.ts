@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { ImageService, AlbumItem, ImageItem } from '../jsonservice/pictures.service';
+import { AlbumService, AlbumItem, ImageItem } from '../Services/albumservice/album.service';
 import { PolaroidComponent } from "../polaroid/polaroid.component";
 
 @Component({
@@ -12,7 +12,7 @@ import { PolaroidComponent } from "../polaroid/polaroid.component";
 })
 export class GalleryComponent implements OnInit {
 
-  constructor(private route: ActivatedRoute, private imageService: ImageService) {}
+  constructor(private route: ActivatedRoute, private imageService: AlbumService) {}
   
   name:string|null = "";
   images: AlbumItem[] = []

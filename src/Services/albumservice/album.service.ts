@@ -16,10 +16,10 @@ export interface AlbumItem {
 @Injectable({
   providedIn: "root",
 })
-export class ImageService {
+export class AlbumService {
   constructor(private http: HttpClient) {}
 
   getImages(): Observable<AlbumItem[]> {
-    return this.http.get<AlbumItem[]>("/images.json")
+    return this.http.get<AlbumItem[]>("/data/alben.json")
   }
 }

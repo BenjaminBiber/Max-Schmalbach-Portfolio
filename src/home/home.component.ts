@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TextService } from '../Services/textservice/text.service';
 
 @Component({
   selector: 'app-home',
@@ -9,82 +10,7 @@ import { CommonModule } from '@angular/common';
 })
 export class HomeComponent {
 
-  projects = [
-    {
-      title: 'Summervibe Production',
-      year: 2020,
-      image: 'Projects/test.jpg'
-    },
-    {
-      title: 'ART - Das kurzfilm Projekt',
-      year: 2023,
-      image: 'Projects/test2.jpg'
-    },
-    {
-      title: 'Maschinenringe Deutschland',
-      year: 2021,
-      image: 'Projects/test1.jpg'
-    },
-    {
-      title: 'Maschinenringe Deutschland',
-      year: 2021,
-      image: 'Projects/test1.jpg'
-    },
-    {
-      title: 'Maschinenringe Deutschland',
-      year: 2021,
-      image: 'Projects/test1.jpg'
-    },
-    {
-      title: 'Maschinenringe Deutschland',
-      year: 2021,
-      image: 'Projects/test1.jpg'
-    },
-    {
-      title: 'Maschinenringe Deutschland',
-      year: 2021,
-      image: 'Projects/test1.jpg'
-    },
-    {
-      title: 'Maschinenringe Deutschland',
-      year: 2021,
-      image: 'Projects/test1.jpg'
-    },
-    {
-      title: 'Maschinenringe Deutschland',
-      year: 2021,
-      image: 'Projects/test1.jpg'
-    },
-    {
-      title: 'Maschinenringe Deutschland',
-      year: 2021,
-      image: 'Projects/test1.jpg'
-    },
-    {
-      title: 'Maschinenringe Deutschland',
-      year: 2021,
-      image: 'Projects/test1.jpg'
-    },
-    {
-      title: 'Maschinenringe Deutschland',
-      year: 2021,
-      image: 'Projects/test1.jpg'
-    }
-  ];
-
-  events = [{
-    start: 2022,
-    end: 2024,
-    name: 'test event',
-    description: 'das ist eine Test beschreibung, der TExt ist wichtig, der wird gehovert'
-  },
-  {
-    start: 2019,
-    end: 2021,
-    name: 'Monday',
-    description: 'das ist eine Test beschreibung, der TExt ist wichtig, der wird gehovert'
-  }
-]
+  constructor(public TextService: TextService){}
 
 Works = [{
   img: 'test.jpg',
