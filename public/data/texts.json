@@ -93,6 +93,31 @@
       "key": "impressum_first_hinweis",
       "value": "Ich erkläre ausdrücklich, dass ich kein Einfluss auf die Gestaltung und Inhalte der verlinkten Seiten habe. Deshalb distanziere ich mich hiermit ausdrücklich allen Inhalten aller verlinkten Seiten auf dieser Homepage.",
       "description": "Hinweis Überschrift im Impressum"
+    },
+    {
+      "key": "about-header",
+      "value": "Über Mich",
+      "description": "Überschrift der Über-Mich Seite"
+    },
+    {
+      "key": "about-first-header",
+      "value": "Wer bin ich?",
+      "description": "Erste Teilüberschrift der Über-Mich Seite"
+    },
+    {
+      "key": "about-second-header",
+      "value": "Was mache ich?",
+      "description": "Zweite Teilüberschrift der Über-Mich Seite"
+    },
+    {
+      "key": "about-first-text",
+      "value": "Mein Name ist Max Schmalbach und komme aus Burgheim im Landkreis Neuburg-Schrobenhausen. Aktuell mache ich den Abschluss an der Wirtschaftsschule und besitze den T-Führerschein. ",
+      "description": "Erster Text der Über-Mich Seite"
+    },
+    {
+      "key": "about-second-text",
+      "value": "In meiner Freizeit arbeite ich bei einem Lohnunternehmen und halte die besten Momente meiner und der Arbeit meiner Kollegen auf Video und Foto fest. Zudem helfe ich meinen Eltern bei der Pflege unserer Pferde und Vögel",
+      "description": "Zweiter Text der Über-Mich Seite"
     }
   ]
   
