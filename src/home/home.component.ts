@@ -32,6 +32,13 @@ export class HomeComponent implements OnInit {
             this.bestPictures.push(best);
           }      
         });
+        const original = [...this.bestPictures];
+
+        while (this.bestPictures.length < 15) {
+          const next = original[this.bestPictures.length % original.length];
+          this.bestPictures.push(next);
+        }
+
       },
       error: (err) => {
         console.error("Error loading images:", err)
