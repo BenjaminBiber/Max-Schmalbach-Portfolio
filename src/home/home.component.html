@@ -36,20 +36,20 @@
       <h4 class="Heading Primary_Txt aos" style="margin-top: 1em;">{{TextService.getTexts("Best_Of_Text")}}</h4>
       <div class="logos">
         <div class="logos-slide">
-          <img *ngFor="let item of Works.slice(0,(Works.length / 2))" src="{{item.img}}" class="work-slide-img" alt="{{item.alt}}" />
+          <img *ngFor="let item of bestPictures.slice(0,(bestPictures.length / 2))" src="{{item.url}}" class="work-slide-img" alt="{{item.title}}" />
         </div>
 
         <div class="logos-slide">
-          <img *ngFor="let item of Works.slice(0,(Works.length / 2))" src="{{item.img}}" class="work-slide-img" alt="{{item.alt}}" />
+          <img *ngFor="let item of bestPictures.slice(0,(bestPictures.length / 2))" src="{{item.url}}" class="work-slide-img" alt="{{item.title}}" />
         </div>
       </div>
       <div class="logos">
         <div class="logos-slide-reverse">
-          <img *ngFor="let item of Works.slice((Works.length / 2),(Works.length))" src="{{item.img}}" class="work-slide-img" alt="{{item.alt}}" />
+          <img *ngFor="let item of bestPictures.slice((bestPictures.length / 2),(bestPictures.length))" src="{{item.url}}" class="work-slide-img" alt="{{item.title}}" />
         </div>
 
         <div class="logos-slide-reverse">
-          <img *ngFor="let item of Works.slice((Works.length / 2),(Works.length))" src="{{item.img}}" class="work-slide-img" alt="{{item.alt}}" />
+          <img *ngFor="let item of bestPictures.slice((bestPictures.length / 2),(bestPictures.length))" src="{{item.url}}" class="work-slide-img" alt="{{item.title}}" />
         </div>
       </div>
     </div>

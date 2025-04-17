@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TextService } from '../Services/textservice/text.service';
+import { AlbumItem, AlbumService, ImageItem } from '../Services/albumservice/album.service';
 
 @Component({
   selector: 'app-home',
@@ -8,36 +9,34 @@ import { TextService } from '../Services/textservice/text.service';
   templateUrl: './home.component.html',
   styleUrl: './home.component.less'
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
 
-  constructor(public TextService: TextService){}
+  constructor(public TextService: TextService, private AlbumService: AlbumService){}
 
-Works = [{
-  img: 'test.jpg',
-  alt: 'test'
-},{
-  img: 'test1.jpg',
-  alt: 'test2'
-},{
-  img: 'test2.jpg',
-  alt: 'test3'
-},{
-  img: 'test3.jpg',
-  alt: 'test4'
-},{
-  img: 'test4.jpg',
-  alt: 'test5'
-},{
-  img: 'test5.jpg',
-  alt: 'test5'
-},{
-  img: 'test6.jpg',
-  alt: 'test6'
-},{
-  img: 'test7.jpg',
-  alt: 'test7'
-},{
-  img: 'test8.jpg',
-  alt: 'test8'
-},]
+  bestPictures: ImageItem[] = []
+  Albums: AlbumItem[] = []
+
+  ngOnInit(): void {
+    this.loadImages()
+    console.log(this.Albums)
+    this.Albums
+  }
+
+  loadImages(): void {
+    this.AlbumService.getImages().subscribe({
+      next: (data) => {
+        data.forEach(x => {
+          const best = x.pictures.find(y => y.isBest);
+          console.log(best)
+          if (best) {
+            this.bestPictures.push(best);
+          }      
+        });
+      },
+      error: (err) => {
+        console.error("Error loading images:", err)
+      },
+    })
+  }
+
 }

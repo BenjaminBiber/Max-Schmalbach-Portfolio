@@ -4,11 +4,13 @@
       "pictures": [
         {
           "url": "images/test.jpg",
-          "title": "Am Strand"
+          "title": "Am Strand",
+          "isBest": true
         },
         {
           "url": "images/test1.jpg",
-          "title": "Sonnenuntergang"
+          "title": "Sonnenuntergang",
+          "isBest": true
         }
       ]
     },
@@ -17,7 +19,8 @@
       "pictures": [
         {
           "url": "images/test3.jpg",
-          "title": "Im Schnee"
+          "title": "Im Schnee",
+          "isBest": true
         }
       ]
     },
@@ -26,11 +29,13 @@
       "pictures": [
         {
           "url": "images/test.jpg",
-          "title": "Am Strand"
+          "title": "Am Strand",
+          "isBest": true
         },
         {
           "url": "images/test1.jpg",
-          "title": "Sonnenuntergang"
+          "title": "Sonnenuntergang",
+          "isBest": true
         }
       ]
     }
