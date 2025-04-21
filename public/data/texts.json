@@ -1,123 +1,122 @@
 [
-    {
-      "key": "homepage_Top_Text",
-      "value": "Hi, ich bin Max, aus Burgheim (LK Neuburg-Schrobenhausen) und erstelle Content rund um und für die Landwirtschaft.",
-      "description": "Der Obere Text auf der Startseite"
-    },
-    {
-      "key": "homepage_Bottom_Text",
-      "value": "Du willst auch deine Feldmomente in bester Qualität eingefangt haben? Dann kontaktiere mich noch heute!",
-      "description": "Der untere Text auf der Startseite"
-    },
-    {
-      "key": "Best_Of_Text",
-      "value": "die Besten Momente",
-      "description": "Die Überschrift für die Besten Momente"
-    },
-    {
-      "key": "homepage_Info_Text",
-      "value": "Alle Bilder sind mit dem Verständis der Landwirte aufgenommen worden",
-      "description": "Der Info Text unter den Besten Momenten"
-    },
-    {
-      "key": "social_link_insta",
-      "value": "https://www.instagram.com/ms.agrarpicture/",
-      "description": "Link zur Instagram Seite"
-    },
-    {
-      "key": "social_link_yt",
-      "value": "https://www.youtube.com/channel/UCJqQtrFqryfVvD5Zaux9FFA",
-      "description": "Link zum Youtube Kannal"
-    },
-    {
-      "key": "social_link_tiktok",
-      "value": "https://www.tiktok.com/@johndeerearmy_maxl",
-      "description": "Link zum TikTok Account"
-    },
-    {
-      "key": "impressum_header",
-      "value": "Impressum",
-      "description": "Überschrift der Impressums Seite"
-    },
-    {
-      "key": "impressum_first_heading",
-      "value": "Verantwortlich für den Inhalt dieser Website",
-      "description": "Erste Überschrift des Impressumgs"
-    },
-    {
-      "key": "impressum_first_parents",
-      "value": "Christine und Michael Schmalbach (Erziehungsberechtigte von Max)",
-      "description": "Erster Text im Impressum"
-    },
-    {
-      "key": "impressum_first_address",
-      "value": "Lange Gasse 45",
-      "description": "Erste Addresszeile im Impressum"
-    },
-    {
-      "key": "impressum_second_address",
-      "value": "86666 Burgheim",
-      "description": "Zweite Addresszeile im Impressum"
-    },
-    {
-      "key": "impressum_phone",
-      "value": "Tel. 08432 / 94938 19",
-      "description": "Telefonnummer im Inpressum"
-    },
-    {
-      "key": "impressum_fax",
-      "value": "Fax 08432 / 94928 18",
-      "description": "Faxnummer im Inpressum"
-    },
-    {
-      "key": "impressum_contact_text",
-      "value": "Du willst auch deine Feldmomente in bester Qualität eingefangt haben? Dann kontaktiere mich noch heute!",
-      "description": "Kontakt Text im Impressum"
-    },
-    {
-      "key": "impressum_second_header",
-      "value": "Copyright Fotos",
-      "description": "Copyright Überschrift im Impressum"
-    },
-    {
-      "key": "impressum_copyright",
-      "value": "Alle Fotos dieser Website unterliegen dem Copyright. Sie bleiben ausdrücklich das Eigentum des Fotografen. Wiederrechtliche Handlungen ohne vorherige Rücksprache und Genehmigung des Fotografen werden zur Anzeige gebracht.",
-      "description": "Copyright Text im Impressum"
-    },
-    {
-      "key": "impressum_hinweis_header",
-      "value": "Hinweis",
-      "description": "Hinweis Überschrift im Impressum"
-    },
-    {
-      "key": "impressum_first_hinweis",
-      "value": "Ich erkläre ausdrücklich, dass ich kein Einfluss auf die Gestaltung und Inhalte der verlinkten Seiten habe. Deshalb distanziere ich mich hiermit ausdrücklich allen Inhalten aller verlinkten Seiten auf dieser Homepage.",
-      "description": "Hinweis Überschrift im Impressum"
-    },
-    {
-      "key": "about-header",
-      "value": "Über Mich",
-      "description": "Überschrift der Über-Mich Seite"
-    },
-    {
-      "key": "about-first-header",
-      "value": "Wer bin ich?",
-      "description": "Erste Teilüberschrift der Über-Mich Seite"
-    },
-    {
-      "key": "about-second-header",
-      "value": "Was mache ich?",
-      "description": "Zweite Teilüberschrift der Über-Mich Seite"
-    },
-    {
-      "key": "about-first-text",
-      "value": "Mein Name ist Max Schmalbach und komme aus Burgheim im Landkreis Neuburg-Schrobenhausen. Aktuell mache ich den Abschluss an der Wirtschaftsschule und besitze den T-Führerschein. ",
-      "description": "Erster Text der Über-Mich Seite"
-    },
-    {
-      "key": "about-second-text",
-      "value": "In meiner Freizeit arbeite ich bei einem Lohnunternehmen und halte die besten Momente meiner und der Arbeit meiner Kollegen auf Video und Foto fest. Zudem helfe ich meinen Eltern bei der Pflege unserer Pferde und Vögel",
-      "description": "Zweiter Text der Über-Mich Seite"
-    }
-  ]
-  
+  {
+    "key": "homepage_Top_Text",
+    "value": "Hi, ich bin Max, aus Burgheim (LK Neuburg-Schrobenhausen) und erstelle Content rund um und für die Landwirtschaft.",
+    "description": "Der Obere Text auf der Startseite"
+  },
+  {
+    "key": "homepage_Bottom_Text",
+    "value": "Du willst auch deine Feldmomente in bester Qualität eingefangt haben? Dann kontaktiere mich noch heute!",
+    "description": "Der untere Text auf der Startseite"
+  },
+  {
+    "key": "Best_Of_Text",
+    "value": "die Besten Momente",
+    "description": "Die Überschrift für die Besten Momente"
+  },
+  {
+    "key": "homepage_Info_Text",
+    "value": "Alle Bilder sind mit dem Verständis der Landwirte aufgenommen worden",
+    "description": "Der Info Text unter den Besten Momenten"
+  },
+  {
+    "key": "social_link_insta",
+    "value": "https://www.instagram.com/ms.agrarpicture/",
+    "description": "Link zur Instagram Seite"
+  },
+  {
+    "key": "social_link_yt",
+    "value": "https://www.youtube.com/channel/UCJqQtrFqryfVvD5Zaux9FFA",
+    "description": "Link zum Youtube Kannal"
+  },
+  {
+    "key": "social_link_tiktok",
+    "value": "https://www.tiktok.com/@johndeerearmy_maxl",
+    "description": "Link zum TikTok Account"
+  },
+  {
+    "key": "impressum_header",
+    "value": "Impressum",
+    "description": "Überschrift der Impressums Seite"
+  },
+  {
+    "key": "impressum_first_heading",
+    "value": "Verantwortlich für den Inhalt dieser Website",
+    "description": "Erste Überschrift des Impressumgs"
+  },
+  {
+    "key": "impressum_first_parents",
+    "value": "Christine und Michael Schmalbach (Erziehungsberechtigte von Max)",
+    "description": "Erster Text im Impressum"
+  },
+  {
+    "key": "impressum_first_address",
+    "value": "Lange Gasse 45",
+    "description": "Erste Addresszeile im Impressum"
+  },
+  {
+    "key": "impressum_second_address",
+    "value": "86666 Burgheim",
+    "description": "Zweite Addresszeile im Impressum"
+  },
+  {
+    "key": "impressum_phone",
+    "value": "Tel. 08432 / 94938 19",
+    "description": "Telefonnummer im Inpressum"
+  },
+  {
+    "key": "impressum_fax",
+    "value": "Fax 08432 / 94928 18",
+    "description": "Faxnummer im Inpressum"
+  },
+  {
+    "key": "impressum_contact_text",
+    "value": "Du willst auch deine Feldmomente in bester Qualität eingefangt haben? Dann kontaktiere mich noch heute!",
+    "description": "Kontakt Text im Impressum"
+  },
+  {
+    "key": "impressum_second_header",
+    "value": "Copyright Fotos",
+    "description": "Copyright Überschrift im Impressum"
+  },
+  {
+    "key": "impressum_copyright",
+    "value": "Alle Fotos dieser Website unterliegen dem Copyright. Sie bleiben ausdrücklich das Eigentum des Fotografen. Wiederrechtliche Handlungen ohne vorherige Rücksprache und Genehmigung des Fotografen werden zur Anzeige gebracht.",
+    "description": "Copyright Text im Impressum"
+  },
+  {
+    "key": "impressum_hinweis_header",
+    "value": "Hinweis",
+    "description": "Hinweis Überschrift im Impressum"
+  },
+  {
+    "key": "impressum_first_hinweis",
+    "value": "Ich erkläre ausdrücklich, dass ich kein Einfluss auf die Gestaltung und Inhalte der verlinkten Seiten habe. Deshalb distanziere ich mich hiermit ausdrücklich allen Inhalten aller verlinkten Seiten auf dieser Homepage.",
+    "description": "Hinweis Überschrift im Impressum"
+  },
+  {
+    "key": "about-header",
+    "value": "Über Mich",
+    "description": "Überschrift der Über-Mich Seite"
+  },
+  {
+    "key": "about-first-header",
+    "value": "Wer bin ich?",
+    "description": "Erste Teilüberschrift der Über-Mich Seite"
+  },
+  {
+    "key": "about-second-header",
+    "value": "Was mache ich?",
+    "description": "Zweite Teilüberschrift der Über-Mich Seite"
+  },
+  {
+    "key": "about-first-text",
+    "value": "Mein Name ist Max Schmalbach und komme aus Burgheim im Landkreis Neuburg-Schrobenhausen. Aktuell mache ich den Abschluss an der Wirtschaftsschule und besitze den T-Führerschein. ",
+    "description": "Erster Text der Über-Mich Seite"
+  },
+  {
+    "key": "about-second-text",
+    "value": "In meiner Freizeit arbeite ich bei einem Lohnunternehmen und halte die besten Momente meiner und der Arbeit meiner Kollegen auf Video und Foto fest. Zudem helfe ich meinen Eltern bei der Pflege unserer Pferde und Vögel",
+    "description": "Zweiter Text der Über-Mich Seite"
+  }
+]
