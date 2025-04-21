@@ -1,0 +1,18 @@
+[
+    {
+        "description": "Hintergrundbild",
+        "url": "images/bkg.jpeg"
+    },
+    {
+        "description": "Das Bild links auf der Startseite",
+        "url": "images/Bild1.png"
+    },
+    {
+        "description": "Das Logo",
+        "url": "images/logo.png"
+    },
+    {
+        "description": "Bild des Fotografen",
+        "url": "images/me.jpg"
+    }
+]

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { TextService } from '../Services/textservice/text.service';
+import { PictureService } from '../Services/imageservice/image.service';
 
 @Component({
   selector: 'app-header-component',
@@ -11,7 +12,7 @@ import { TextService } from '../Services/textservice/text.service';
 })
 export class HeaderComponentComponent {
 
-  constructor(public TextService: TextService){}
+  constructor(public TextService: TextService, public PictureService: PictureService){}
   showMenu: boolean = false;
 
   HideBackground()

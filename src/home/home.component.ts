@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TextService } from '../Services/textservice/text.service';
 import { AlbumItem, AlbumService, ImageItem } from '../Services/albumservice/album.service';
+import { PictureService } from '../Services/imageservice/image.service';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +12,7 @@ import { AlbumItem, AlbumService, ImageItem } from '../Services/albumservice/alb
 })
 export class HomeComponent implements OnInit {
 
-  constructor(public TextService: TextService, private AlbumService: AlbumService){}
+  constructor(public TextService: TextService, private AlbumService: AlbumService, public PictureService: PictureService){}
 
   bestPictures: ImageItem[] = []
   Albums: AlbumItem[] = []
